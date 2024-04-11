@@ -15,10 +15,6 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.contador{
-    font-size: 20px;
-    text-align: center;
-}
 
 .conteudo-principal {
     display: flex;
@@ -91,6 +87,10 @@ body {
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
+}
+.contador{
+    font-size: 20px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
