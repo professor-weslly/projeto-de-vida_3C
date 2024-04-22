@@ -2,8 +2,7 @@ const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
 for (let i = 0; i < botoes.length; i++) {
-    //contadores[0].textContent = calculaTempo(tempoObjetivo1);// essa linha está errada
-    botoes[i].onclick = function () {
+   botoes[i].onclick = function () {
 
         for (let j = 0; j < botoes.length; j++) {
             botoes[j].classList.remove("ativo");
@@ -35,7 +34,10 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
  
- return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+ if (tempoFinal > 0){
+     return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+        } else {
+            return "Prazo Finalizado";
 }
 
 function atualizaCronometro(){
@@ -43,13 +45,6 @@ function atualizaCronometro(){
         contadores[i].textContent = calculaTempo(tempos[i]);   
     }
 }
-
-isso vai entrar no lugar da função acima //if (tempoFinal > 0){
-//        return dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
-//    } else {
-//        return "Prazo Finalizado";
-//    }
-//}
 
 function comecaCronometro(){
     atualizaCronometro();
