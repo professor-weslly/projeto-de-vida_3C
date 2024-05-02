@@ -88,13 +88,12 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
+/* Verificar aula 02/05
 .contador{
     font-size: 20px;
     text-align: center;
 }
 
-/*
-Aula 24/04
 .contador-digito{
     padding: 0 16px;
     text-align: center;
